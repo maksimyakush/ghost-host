@@ -1,0 +1,82 @@
+.worker {
+  position: relative;
+  display: grid;
+  text-align: center;
+  grid-row-gap: 1rem;
+  transform: scale(1);
+  cursor: pointer;
+
+  &:hover &__img {
+    transform: scale(1.1);
+    filter: blur(1px) brightness(90%);
+  }
+
+  &:after {
+    font-family: LatoBold;
+    content: "";
+    color: black;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.3s 0.3s;
+  }
+
+  &:hover:after {
+    content: "lorem";
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    opacity: 1;
+    text-align: left;
+    transform: translateX(-50%);
+    backface-visibility: hidden;
+  }
+
+  &__name {
+    font-family: LatoBold;
+    font-size: 1.7rem;
+    color: #303030;
+  }
+
+  &__position {
+    font-size: 1.5rem;
+    color: #8e8e8e;
+  }
+
+  &__img {
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 50%;
+    border: 0.5rem solid #e5e5e5;
+    transition: all 0.6s;
+    justify-self: center;
+  }
+
+  &__social {
+    display: grid;
+    grid-auto-flow: column;
+    width: 90%;
+    justify-content: space-between;
+    align-self: end;
+
+    a {
+      display: grid;
+      transition: all 0.3;
+      &:hover {
+        opacity: 0.7;
+      }
+
+      svg {
+        max-width: 1.6rem;
+        max-height: 1.6rem;
+        fill: #bfbfbf;
+      }
+      .icon--active {
+        fill: #1f89ba;
+      }
+    }
+  }
+}

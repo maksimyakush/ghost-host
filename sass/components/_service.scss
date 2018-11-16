@@ -1,0 +1,53 @@
+%service-before {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 2.1rem));
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.service {
+  text-align: center;
+  position: relative;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__description {
+    margin-top: 0.6rem;
+    font-family: LatoLight;
+    line-height: 1.38;
+    color: #7e7e7e;
+  }
+
+  &--fast-servers::after {
+    @extend %service-before;
+    content: url(../../img/SVG/bolt.svg);
+    background-color: #f1c40f;
+  }
+
+  &--cloud-servers::after {
+    @extend %service-before;
+    content: url(../../img/SVG/cloud.svg);
+    background-color: #0faff1;
+  }
+
+  &--domain-transfer::after {
+    @extend %service-before;
+    content: url(../../img/SVG/arrows.svg);
+    background-color: #95a5a6;
+  }
+
+  &--live-support::after {
+    @extend %service-before;
+    content: url(../../img/SVG/bubbles.svg);
+    background-color: #f1540f;
+  }
+}

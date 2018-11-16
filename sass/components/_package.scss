@@ -1,0 +1,165 @@
+%svg-wrapper {
+  padding: 1.1rem;
+  justify-self: center;
+  align-self: center;
+  border-radius: 50%;
+  height: 5.6rem;
+  width: 5.6rem;
+  transform: rotate(45deg);
+}
+
+.package {
+  border-top: 0.5rem solid var(--c-yellow-1);
+  background-color: #fff;
+  display: grid;
+  box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.06);
+  padding: 3.4rem 2.7rem 3.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__svg-wrapper {
+    @extend %svg-wrapper;
+    border: 7px solid var(--c-yellow-1);
+    & > .anchor-icon {
+      fill: var(--c-yellow-1);
+    }
+  }
+
+  &__name {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    transform: rotate(-45deg);
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 1.9rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 5rem;
+
+    &-value {
+      color: var(--c-yellow-1);
+      justify-self: end;
+    }
+  }
+
+  &__price {
+    display: grid;
+    grid-auto-flow: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    border-bottom: 4px solid var(--c-yellow-1);
+    padding-top: 3rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 2rem;
+
+    &-sign {
+      font-family: LatoBold;
+      font-size: 1.7rem;
+      color: #2c2c2c;
+      align-self: start;
+    }
+
+    &-value {
+      font-family: LatoBold;
+      line-height: 1;
+      font-size: 2.7rem;
+      color: #2c2c2c;
+    }
+
+    &-month {
+      font-size: 1.3rem;
+      color: #8d8d8d;
+      align-self: end;
+    }
+  }
+
+  &--yellow {
+    & > .package__svg-wrapper {
+      @extend %svg-wrapper;
+      border: 7px solid transparent;
+      border-top: 7px solid var(--c-yellow-1);
+    }
+  }
+
+  &--grey {
+    border-top: 0.5rem solid var(--c-grey-1);
+    .package__item-value {
+      color: var(--c-grey-1);
+    }
+
+    & > .package__svg-wrapper {
+      @extend %svg-wrapper;
+      border: 7px solid transparent;
+      border-top: 7px solid var(--c-grey-1);
+      border-right: 7px solid var(--c-grey-1);
+
+      & > .package__icon {
+        fill: var(--c-grey-1);
+      }
+    }
+
+    & > .package__price {
+      border-bottom: 4px solid var(--c-grey-1);
+    }
+  }
+
+  &--red {
+    border-top: 0.5rem solid var(--c-red-1);
+    .package__item-value {
+      color: var(--c-red-1);
+    }
+
+    & > .package__svg-wrapper {
+      @extend %svg-wrapper;
+      border: 7px solid transparent;
+      border-top: 7px solid var(--c-red-1);
+      border-right: 7px solid var(--c-red-1);
+      border-bottom: 7px solid var(--c-red-1);
+
+      & > .package__icon {
+        fill: var(--c-red-1);
+      }
+    }
+
+    & > .package__price {
+      border-bottom: 4px solid var(--c-red-1);
+    }
+  }
+
+  &--green {
+    border-top: 0.5rem solid var(--c-green-1);
+    .package__item-value {
+      color: var(--c-green-1);
+    }
+
+    & > .package__svg-wrapper {
+      @extend %svg-wrapper;
+      border: 7px solid var(--c-green-1);
+
+      & > .package__icon {
+        fill: var(--c-green-1);
+      }
+    }
+
+    & > .package__price {
+      border-bottom: 4px solid var(--c-green-1);
+    }
+  }
+}

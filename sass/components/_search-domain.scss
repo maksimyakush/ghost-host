@@ -1,0 +1,72 @@
+.search-domain {
+  padding: 0.9rem 1.5rem;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  color: #cbcbcb;
+  display: grid;
+  grid-template-columns: max-content minmax(10px, 1fr) max-content;
+  align-items: center;
+
+  &__input {
+    min-width: 10px !important;
+    font-family: LatoBold;
+    border: 1px #d9d9d9 solid;
+    border-top: none;
+    border-bottom: none;
+    margin: 0 1.6rem;
+    padding: 0.6rem 1.5rem;
+    color: #868686;
+    font-size: 1.6rem;
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      font-family: LatoBold;
+      color: #868686;
+    }
+    &::-moz-placeholder {
+      font-family: LatoBold;
+      color: #868686;
+    }
+    &::placeholder {
+      font-family: LatoBold;
+      color: #868686;
+    }
+  }
+
+  &__select-box {
+    position: relative;
+    &:before {
+      content: "\f107";
+      font-family: FontAwesome;
+      position: absolute;
+      font-size: 14px;
+      right: 5px;
+      top: 3px;
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+  &__select {
+    cursor: pointer;
+    background-color: transparent;
+
+    &:hover {
+      opacity: 0.7;
+    }
+    font-size: 1.6rem;
+    color: #cbcbcb;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 2.3rem;
+    &:active,
+    &:focus {
+      outline: none;
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Markup</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo-nav-box logo-nav-box--header">
+          <a href="#" class="logo-box">
+            <img src="./img/logo.png" alt="Logo" class="logo logo--white" />
+          </a>
+          <div class="hamburger-img">&#9776;</div>
+          <nav class="navigation navigation--header">
+            <ul class="navigation__list">
+              <li><a href="#" data-active>Home</a></li>
+              <li><a href="#">Domain</a></li>
+              <li><a href="#">Hosting</a></li>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__text-box">
+          <h1 class="heading-1">Hello!</h1>
+          <h3 class="heading-3">We love our work...</h3>
+          <h3 class="heading-3">And We're taking it seriously...</h3>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="login-and-register">
+        <button class="btn btn--login">Login</button>
+        <button class="btn btn--register">Register</button>
+      </div>
+
+      <section class="choose-domain container">
+        <h3 class="heading-4">Would you like to buy a new domain?</h3>
+        <p class="choose-domain__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          auctor mauris ac nulla interdum, id molestier.
+        </p>
+        <form action="#" class="search-domain">
+          <span class="search-domain__www-text">www.</span>
+          <input
+            type="text"
+            placeholder="What do you want?"
+            class="search-domain__input"
+          />
+          <div class="search-domain__select-box">
+            <select name="domain" class="search-domain__select">
+              <option value="com">.com</option>
+              <option value="net">.net</option>
+              <option value="org">.org</option>
+            </select>
+          </div>
+        </form>
+        <table class="choose-plan">
+          <tr class="choose-plan__item">
+            <td>.COM</td>
+            <td>1 Year</td>
+            <td>$9.00 USD</td>
+            <td>Transfer Price No</td>
+          </tr>
+          <tr class="choose-plan__item">
+            <td>.NET</td>
+            <td>1 Year</td>
+            <td>$9.00 USD</td>
+            <td>Transfer Price No</td>
+          </tr>
+        </table>
+      </section>
+      <section class="packages">
+        <div class="packages__inner container">
+          <div class="package package--yellow">
+            <div class="package__svg-wrapper">
+              <svg class="package__icon anchor-icon">
+                <use href="./img/sprite.svg#icon-anchor" />
+              </svg>
+            </div>
+
+            <div class="heading-6 package__name">Basic Package</div>
+
+            <ul class="package__list">
+              <li class="package__item">
+                <div class="package__item-name">Disk Space(GB)</div>
+                <div class="package__item-value">50</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Subdomains</div>
+                <div class="package__item-value">50</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Transfer(GB)</div>
+                <div class="package__item-value">50</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Data bases</div>
+                <div class="package__item-value">1</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Dashboards</div>
+                <div class="package__item-value">1</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Control Panel & FTP</div>
+                <div class="package__item-value"></div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Free Support</div>
+                <div class="package__item-value"></div>
+              </li>
+            </ul>
+            <div class="package__price">
+              <div class="package__price-sign">$</div>
+
+              <div class="package__price-value">15</div>
+              <div class="package__price-month">/Mo</div>
+            </div>
+            <button class="btn btn--text">Select plan</button>
+          </div>
+
+          <div class="package package--grey">
+            <div class="package__svg-wrapper">
+              <svg class="package__icon icon-star-half-empty">
+                <use href="./img/sprite.svg#icon-star-half-empty" />
+              </svg>
+            </div>
+
+            <div class="heading-6 package__name">Normal Package</div>
+
+            <ul class="package__list">
+              <li class="package__item">
+                <div class="package__item-name">Disk Space(GB)</div>
+                <div class="package__item-value">100</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Subdomains</div>
+                <div class="package__item-value">100</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Transfer(GB)</div>
+                <div class="package__item-value">100</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Data bases</div>
+                <div class="package__item-value">2</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Dashboards</div>
+                <div class="package__item-value">2</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Control Panel & FTP</div>
+                <div class="package__item-value"></div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Free Support</div>
+                <div class="package__item-value"></div>
+              </li>
+            </ul>
+            <div class="package__price">
+              <div class="package__price-sign">$</div>
+
+              <div class="package__price-value">30</div>
+              <div class="package__price-month">/Mo</div>
+            </div>
+            <button class="btn btn--text">Select plan</button>
+          </div>
+
+          <div class="package package--red">
+            <div class="package__svg-wrapper">
+              <svg class="package__icon icon-star">
+                <use href="./img/sprite.svg#icon-star" />
+              </svg>
+            </div>
+
+            <div class="heading-6 package__name">Big Package</div>
+
+            <ul class="package__list">
+              <li class="package__item">
+                <div class="package__item-name">Disk Space(GB)</div>
+                <div class="package__item-value">150</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Subdomains</div>
+                <div class="package__item-value">150</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Transfer(GB)</div>
+                <div class="package__item-value">150</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Data bases</div>
+                <div class="package__item-value">4</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Dashboards</div>
+                <div class="package__item-value">4</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Control Panel & FTP</div>
+                <div class="package__item-value"></div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Free Support</div>
+                <div class="package__item-value"></div>
+              </li>
+            </ul>
+            <div class="package__price">
+              <div class="package__price-sign">$</div>
+
+              <div class="package__price-value">40</div>
+              <div class="package__price-month">/Mo</div>
+            </div>
+            <button class="btn btn--text">Select plan</button>
+          </div>
+
+          <div class="package package--green">
+            <div class="package__svg-wrapper">
+              <svg class="package__icon diamond-icon">
+                <use href="./img/sprite.svg#icon-diamond" />
+              </svg>
+            </div>
+
+            <div class="heading-6 package__name">Basic Package</div>
+
+            <ul class="package__list">
+              <li class="package__item">
+                <div class="package__item-name">Disk Space(GB)</div>
+                <div class="package__item-value">250</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Subdomains</div>
+                <div class="package__item-value">250</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Transfer(GB)</div>
+                <div class="package__item-value">250</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Data bases</div>
+                <div class="package__item-value">1</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Dashboards</div>
+                <div class="package__item-value">1</div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Control Panel & FTP</div>
+                <div class="package__item-value"></div>
+              </li>
+
+              <li class="package__item">
+                <div class="package__item-name">Free Support</div>
+                <div class="package__item-value"></div>
+              </li>
+            </ul>
+            <div class="package__price">
+              <div class="package__price-sign">$</div>
+
+              <div class="package__price-value">15</div>
+              <div class="package__price-month">/Mo</div>
+            </div>
+            <button class="btn btn--text">Select plan</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us container">
+        <div class="about-us__info">
+          <h3 class="heading-2">
+            About <span class="heading-2--sub">Us</span>
+          </h3>
+          <p class="about-us__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            feugiat eget diam sit amet molestie.Curabitur. ut ipsum bibendum
+            tortor lacinia fermentum nec joeıa. Mauris at augue libero. Fusce
+            posuere, sapien nec poır. Uaee augsuada sed mauris in tincidunt...
+          </p>
+        </div>
+        <div class="about-us__workers">
+          <div class="worker">
+            <img src="./img/team-img-1.png" alt="" class="worker__img" />
+            <p class="worker__name">Jonny Doe</p>
+            <p class="worker__position">Designer</p>
+            <div class="worker__social">
+              <a href="#">
+                <svg class="facebook-icon">
+                  <use href="./img/sprite.svg#icon-facebook" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="twitter-icon">
+                  <use href="./img/sprite.svg#icon-twitter" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="chain-icon icon--active">
+                  <use href="./img/sprite.svg#icon-chain" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="worker">
+            <img src="./img/team-img-2.png" alt="" class="worker__img" />
+            <p class="worker__name">John Doe</p>
+            <p class="worker__position">Designer</p>
+            <div class="worker__social">
+              <a href="#">
+                <svg class="facebook-icon">
+                  <use href="./img/sprite.svg#icon-facebook" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="twitter-icon">
+                  <use href="./img/sprite.svg#icon-twitter" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="chain-icon">
+                  <use href="./img/sprite.svg#icon-chain" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="worker">
+            <img src="./img/team-img-3.png" alt="" class="worker__img" />
+            <p class="worker__name">Johnathan Doe</p>
+            <p class="worker__position">Designer</p>
+            <div class="worker__social">
+              <a href="#">
+                <svg class="facebook-icon">
+                  <use href="./img/sprite.svg#icon-facebook" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="twitter-icon">
+                  <use href="./img/sprite.svg#icon-twitter" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="chain-icon">
+                  <use href="./img/sprite.svg#icon-chain" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <input type="radio" id="img-1" name="images" checked />
+        <input type="radio" id="img-2" name="images" />
+        <input type="radio" id="img-3" name="images" />
+        <div class="slide slide-1" id="slide-one">
+          <div class="slide__content">
+            <blockquote class="slide__text">
+              “Suspendisse tempor turpis odio, sit amet cursus leo consequat
+              non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar
+              vitae.”
+            </blockquote>
+            <div class="author-dots-box">
+              <span class="slide__text-author">John Doe</span>
+              <div class="nav-slide slide-1__nav-slide">
+                <label for="img-1" class="dots" id="dot1"></label>
+                <label for="img-2" class="dots" id="dot2"></label>
+                <label for="img-3" class="dots" id="dot3"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-2" id="slide-two">
+          <div class="slide__content">
+            <blockquote class="slide__text">
+              “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem hic praesentium minima voluptatem impedit facilis?”
+            </blockquote>
+            <div class="author-dots-box">
+              <span class="slide__text-author">John Doe</span>
+              <div class="nav-slide slide-1__nav-slide">
+                <label for="img-1" class="dots" id="dot1"></label>
+                <label for="img-2" class="dots" id="dot2"></label>
+                <label for="img-3" class="dots" id="dot3"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-3" id="slide-three">
+          <div class="slide__content">
+            <blockquote class="slide__text">
+              “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              similique nobis, molestias temporibus debitis commodi dolorem.”
+            </blockquote>
+            <div class="author-dots-box">
+              <span class="slide__text-author">John Doe</span>
+              <div class="nav-slide slide-1__nav-slide">
+                <label for="img-1" class="dots" id="dot1"></label>
+                <label for="img-2" class="dots" id="dot2"></label>
+                <label for="img-3" class="dots" id="dot3"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services container">
+        <a href="#" class="service service--fast-servers">
+          <div class="heading-5 service__name">Fast Servers</div>
+          <p class="service__description">
+            Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.
+          </p>
+        </a>
+        <a href="#" class="service service--cloud-servers">
+          <div class="heading-5 service__name">Cloud Servers</div>
+          <p class="service__description">
+            Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.
+          </p>
+        </a>
+        <a href="#" class="service service--domain-transfer">
+          <div class="heading-5 service__name">Domain Transfer</div>
+          <p class="service__description">
+            Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.
+          </p>
+        </a>
+        <a href="#" class="service service--live-support">
+          <div class="heading-5 service__name">Live Support</div>
+          <p class="service__description">
+            Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.
+          </p>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="logo-nav-box logo-nav-box--footer">
+          <a href="#" class="logo-box">
+            <img src="./img/logo.png" class="logo logo--dark" alt="Logo" />
+          </a>
+          <ul class="navigation navigation--footer">
+            <li><a href="#" data-active>Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-sections-box">
+          <section class="footer__copyright">
+            <p class="footer__copyright-text">
+              Lorem ipsum dolor sit amet, consecteteeseurı adipiscing elit.
+              Donec mollis commodoeesene que, non commodo risus volutpat vel.
+            </p>
+            <p class="footer__copyright-designed-by">
+              Design by
+              <span class="footer__copyright-designed-by--sub"
+                >Mert Can Eyriyer</span
+              >
+            </p>
+          </section>
+          <section
+            class="
+              footer__site-map"
+          >
+            <ul class="footer__site-map-list">
+              <li><a href="#" data-active>Support</a></li>
+              <li><a href="#">Site Map</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Whois Search</a></li>
+              <li><a href="#">Product Catalog</a></li>
+              <li><a href="#">Web Mail</a></li>
+              <li><a href="#">Shortcodes</a></li>
+              <li><a href="#">Find Domain</a></li>
+            </ul>
+          </section>
+          <section class="footer__contacts">
+            <ul class="footer__contacts-list">
+              <li class="our-tel-number">
+                <a href="tel:+000000000000">0000-0000-0000</a>
+              </li>
+              <li class="our-email">
+                <a href="mailto:informationteam@host.com"
+                  >informationteam@host.com</a
+                >
+              </li>
+              <li class="our-address">
+                Lorem Ipsum Street, Lorem Avenue, Lorem Ipsum
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

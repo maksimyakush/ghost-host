@@ -1,0 +1,80 @@
+%navigation-list-after {
+  content: "";
+  display: grid;
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -1px;
+  height: 1px;
+  background-color: #fff;
+
+  @media only screen and (max-width: 900px) {
+    bottom: calc(-1px - 2rem);
+  }
+
+  @media only screen and (max-width: 720px) {
+    bottom: 0;
+  }
+}
+
+.navigation {
+  display: grid;
+  grid-auto-flow: column;
+  justify-self: end;
+  list-style: none;
+
+  @media only screen and (max-width: 900px) {
+    justify-self: center;
+  }
+
+  @media only screen and (max-width: 720px) {
+    grid-auto-flow: row;
+    justify-self: stretch;
+    justify-items: center;
+    align-content: center;
+    grid-row-gap: 2rem;
+    display: none;
+  }
+
+  & a {
+    font-family: LatoRegular;
+    position: relative;
+    align-content: center;
+    display: grid;
+    height: 100%;
+  }
+
+  &--header {
+    grid-column-gap: 7rem;
+
+    & a {
+      transition: all 1s;
+      color: var(--c-white);
+
+      &:after {
+        @extend %navigation-list-after;
+        transition: all 0.6s;
+      }
+
+      &:not([data-active]):hover:after,
+      &[data-active]:after {
+        @extend %navigation-list-after;
+        right: 0;
+        transition: all 0.6s;
+      }
+    }
+  }
+
+  &--footer {
+    grid-column-gap: 4.6rem;
+
+    a {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      &[data-active],
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

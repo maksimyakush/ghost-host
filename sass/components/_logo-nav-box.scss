@@ -1,0 +1,56 @@
+.logo-nav-box {
+  display: grid;
+  position: relative;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 2rem;
+
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: auto;
+    padding: 2rem 0;
+  }
+
+  .logo-box {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .logo {
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .logo--white {
+    filter: opacity(1);
+  }
+
+  .logo--dark {
+    filter: opacity(0.7);
+  }
+
+  &--header {
+    min-height: 9rem;
+    border-bottom: 1px solid #2e2e30;
+  }
+
+  &--footer {
+    min-height: 7.5rem;
+    border-bottom: 1px solid #4a4a4a;
+    grid-column: 1 / -1;
+  }
+
+  .hamburger-img {
+    position: absolute;
+    right: 5%;
+    top: 1.5rem;
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 720px) {
+      display: grid;
+    }
+  }
+}
